@@ -178,6 +178,32 @@ alias kej='kubectl edit job'
 alias kdj='kubectl describe job'
 alias kdelj='kubectl delete job'
 
+# HPA management.
+alias kghpa='kubectl get hpa'
+alias kehpa='kubectl edit hpa'
+alias kdhpa='kubectl describe hpa'
+alias kdelhpa='kubectl delete hpa'
+
+# VPA management.
+alias kgvpa='kubectl get vpa'
+alias kevpa='kubectl edit vpa'
+alias kdvpa='kubectl describe vpa'
+alias kdelvpa='kubectl delete vpa'
+
+# Rollout management.
+alias krrd='kubectl rollout restart deployment'
+alias krrs='kubectl rollout restart statefulset'
+
+# Top command for resource usage
+alias ktop='kubectl top'
+alias ktopn='kubectl top nodes'
+alias ktopnsl='kubectl top nodes --show-labels'
+alias ktopnslw='kubectl top nodes --show-labels --watch'
+alias ktoppl='kubectl top pods'
+alias ktoppsl='kubectl top pods --show-labels'
+alias ktoppslw='kubectl top pods --show-labels --watch'
+
+
 # Utility print functions (json / yaml)
 function _build_kubectl_out_alias {
   setopt localoptions norcexpandparam
